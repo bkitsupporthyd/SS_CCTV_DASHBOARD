@@ -1,0 +1,65 @@
+{
+  "last_refreshed": "2025-07-21 21:48:52 IST",
+  "data": [
+    {
+      "ip": "172.16.1.1",
+      "description": "Main security(L) Outside Room Road View",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.2",
+      "description": "Main security(L) Inside Room",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.3",
+      "description": "Main security (L) Inside Gate",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.4",
+      "description": "Main security (L) PC road",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.5",
+      "description": "Main security (L) under shed",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.6",
+      "description": "Main security(R) Outside road view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.7",
+      "description": "Main security (R) Inside Room",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.8",
+      "description": "Main security(R) Inside Gate",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.9",
+      "description": "Main security(R) ADRM view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.10",
+      "description": "Main security PTZ FRONT OF GATE",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.2.3",
+      "description": "AB Bhawan",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.6.5",
+      "description": "ISP",
+      "status": "Down (Timeout)"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+172.16.1.1,Main security(L) Outside Room Road View
+
+
+
+172.16.1.2,Main security(L) Inside Room
+
+
+
+172.16.1.3,Main security (L) Inside Gate
+
+
+
+172.16.1.4,Main security (L) PC road
+
+
+
+172.16.1.5,Main security (L) under shed
+
+
+
+172.16.1.6,Main security(R) Outside road view
+
+
+
+172.16.1.7,Main security (R) Inside Room
+
+
+
+172.16.1.8,Main security(R) Inside Gate 
+
+
+
+172.16.1.9,Main security(R) ADRM view
+
+
+
+172.16.1.10,Main security PTZ FRONT OF GATE
+
+
+
+172.16.2.3,AB Bhawan
+
+
+
+172.16.6.5,ISP
+
+
+
+
+
