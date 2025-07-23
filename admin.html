@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Edit IP List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Edit CCTV IP List</h2>
+
+    {% if success %}
+        <p class="success">✔ IP list updated successfully!</p>
+    {% endif %}
+
+    <form method="post">
+        <textarea name="ip_list">{{ ip_data }}</textarea><br>
+        <button type="submit">💾 Save Changes</button>
+    </form>
+</body>
+</html>

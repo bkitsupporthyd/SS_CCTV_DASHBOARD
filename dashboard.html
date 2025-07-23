@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CCTV IP Status Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f5f9;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .status-summary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .status-box {
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .total { background-color: #2979ff; }
+        .up { background-color: #2e7d32; }
+        .down { background-color: #d32f2f; }
+        .last-updated {
+            background-color: #f9a825;
+            color: #000;
+            cursor: default;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .status-up {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-down {
+            color: red;
+            font-weight: bold;
+        }
+
+        .export-btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #1976d2;
+            color: white;
+            font-size: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .export-btn:hover {
+            background-color: #0d47a1;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 22px;
+            }
+            .status-summary {
+                flex-direction: column;
+                align-items: center;
+            }
+            .status-box {
+                width: 80%;
+            }
+            table {
+                font-size: 14px;
+            }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1 style="margin: 0;">CCTV IP Status Dashboard</h1>
+        <a href="/logout" title="Logout" style="text-decoration:none; margin-left:auto;">
+            <button style="background: none; border: none; cursor: pointer; font-size: 22px; color: #d32f2f; padding: 8px 12px;">
+                <span style="vertical-align: middle;">&#x1F511;</span>
+            </button>
+        </a>
+    </div>
+
+    <div class="status-summary">
+        <div class="status-box total" onclick="filterTable('all')">
+            Total: {{ results.data | length }}
+        </div>
+        <div class="status-box up" onclick="filterTable('Up')">
+            Up: {{ results.data | selectattr('status', 'equalto', 'Up') | list | length }}
+        </div>
+        <div class="status-box down" onclick="filterTable('Down')">
+            Down: {{ results.data | selectattr('status', 'ne', 'Up') | list | length }}
+        </div>
+        <div class="status-box last-updated">
+            Last Refreshed: {{ results.last_refreshed }}
+        </div>
+    </div>
+
+    <button class="export-btn" onclick="downloadCSV()">⬇️ Export CSV</button>
+
+    <div class="table-wrapper">
+        <table id="ipTable">
+            <thead>
+                <tr>
+                    <th>IP Address</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in results.data %}
+                    <tr>
+                        <td>{{ entry.ip }}</td>
+                        <td>{{ entry.description }}</td>
+                        <td class="{{ 'status-up' if entry.status == 'Up' else 'status-down' }}">
+                            <span class="ip-spinner" style="display:none; vertical-align:middle; margin-right:6px;">
+                                <span class="spinner" style="display:inline-block; width:18px; height:18px; border:3px solid #f3f3f3; border-top:3px solid #3498db; border-radius:50%; animation:spin 1s linear infinite;"></span>
+                            </span>
+                            <span class="ip-status-text">{{ entry.status }}</span>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Remove the full-page loader -->
+    <div id="updateMsg" style="display:none; text-align:center; color:green; font-weight:bold; margin-top:10px; margin-bottom:10px;">Data updated!</div>
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script>
+        function filterTable(type) {
+            const rows = document.querySelectorAll("#ipTable tbody tr");
+            rows.forEach(row => {
+                const status = row.cells[2].innerText;
+                if (type === 'all') {
+                    row.style.display = '';
+                } else if (type === 'Up' && status === 'Up') {
+                    row.style.display = '';
+                } else if (type === 'Down' && status !== 'Up') {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function downloadCSV() {
+            const table = document.getElementById("ipTable");
+            const rows = Array.from(table.querySelectorAll("tbody tr"))
+                .filter(row => row.style.display !== "none");
+            const header = Array.from(table.querySelectorAll("thead th"))
+                .map(th => `"${th.innerText}"`).join(",");
+
+            const data = rows.map(row => {
+                const cols = row.querySelectorAll("td");
+                return Array.from(cols).map(td => `"${td.innerText}"`).join(",");
+            });
+
+            const csvContent = [header, ...data].join("\n");
+
+            const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "cctv_status_filtered.csv";
+            a.click();
+        }
+
+        function showUpdateMsg() {
+            const msg = document.getElementById('updateMsg');
+            msg.style.display = 'block';
+            setTimeout(() => { msg.style.display = 'none'; }, 1500);
+        }
+        function updateTable(data) {
+            // Update summary
+            document.querySelector('.status-box.total').innerText = 'Total: ' + data.data.length;
+            document.querySelector('.status-box.up').innerText = 'Up: ' + data.data.filter(e => e.status === 'Up').length;
+            document.querySelector('.status-box.down').innerText = 'Down: ' + data.data.filter(e => e.status !== 'Up').length;
+            document.querySelector('.status-box.last-updated').innerText = 'Last Refreshed: ' + data.last_refreshed;
+            // Update table
+            const tbody = document.querySelector('#ipTable tbody');
+            tbody.innerHTML = '';
+            data.data.forEach(entry => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${entry.ip}</td><td>${entry.description}</td><td class="${entry.status === 'Up' ? 'status-up' : 'status-down'}"><span class="ip-spinner" style="display:none; vertical-align:middle; margin-right:6px;"><span class="spinner" style="display:inline-block; width:18px; height:18px; border:3px solid #f3f3f3; border-top:3px solid #3498db; border-radius:50%; animation:spin 1s linear infinite;"></span></span><span class="ip-status-text">${entry.status}</span></td>`;
+                tbody.appendChild(tr);
+            });
+        }
+        function hideAllRowSpinners() {
+            document.querySelectorAll('.ip-spinner').forEach(s => s.style.display = 'none');
+        }
+        function showRowSpinner(idx) {
+            hideAllRowSpinners();
+            const row = document.querySelector(`#ipTable tbody tr:nth-child(${idx+1}) .ip-spinner`);
+            if (row) row.style.display = 'inline-block';
+        }
+        // WebSocket logic
+        let socket;
+        window.addEventListener('DOMContentLoaded', function() {
+            // No full-page loader
+            socket = io();
+            // Initial table already rendered with old data
+            socket.emit('start_ping');
+            socket.on('progress', function(data) {
+                showRowSpinner(data.current);
+            });
+            socket.on('ping_results', function(data) {
+                updateTable(data);
+                hideAllRowSpinners();
+                showUpdateMsg();
+            });
+        });
+    </script>
+</body>
+</html>
