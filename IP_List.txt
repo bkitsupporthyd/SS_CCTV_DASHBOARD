@@ -1,0 +1,190 @@
+172.16.1..1 = Main security(L) Outside Room Road View
+172.16.1..2 = Main security(L) Inside Room
+172.16.1..3 = Main security (L) Inside Gate
+172.16.1..4 = Main security (L) PC road
+172.16.1..5 = Main security (L) under shed
+172.16.1..6 = Main security(R) Outside road view
+172.16.1..7 = Main security (R) Inside Room
+172.16.1..8 = Main security(R) Inside Gate 
+172.16.1..9 = Main security(R) ADRM view
+172.16.1..10 = Main security PTZ FRONT OF GATE
+172.16.1..11 = Brundvn Gardn Entrance View cc@ADTRM front
+172.16.1..12 = ADITORIUM front view connctn from security(syb rd)
+172.16.1..13 = ADITORIUM front view connctn from security(ab rd)
+172.16.1..14 = Childrens park to JIO tower Road
+172.16.1..15 = security R.side room out K&D road view smr side
+172.16.1.51 = K & D Main entrance portigo 
+172.16.1.52 = K & D Main entrance inside LAAN 
+172.16.1.53 = K & D SMR side parking
+172.16.1.54 = K & D vegiatable side
+172.16.1.55 = K & D Main kitchen middle
+172.16.1.56 = K & D Back side keti
+172.16.1.57 = K & D Roti
+172.16.1.80 = 2ND Gate at K&D/Well
+172.16.1.81 =  K&D Road Ragi Tree
+172.16.1.82 =  sump
+172.16.1.83 = Jopidi out{ Joola]
+172.16.1.84 = Jopidi inside
+172.16.1.85 = Padhad BabaRoom outside
+172.16.1.86 = Padhad BabaRoom inside
+172.16.1.87 =  K&D Talab turning to Bore well of church road
+172.16.1.88 =  K&D Talab turning to Vishram bwn Road
+172.16.1.89 = K&D Jopidi Turning on road view to golf side
+172.16.1.101 = ADTRM MAIN front middle entrance
+172.16.1.102 = ADTRM Front (R)® passage view
+172.16.1.103 = ADTRM (R)® sofas view
+172.16.1.104 = ADTRM (L) sofa Museum steps    
+172.16.1.105 = ADTRM (L) middle Galli dring water
+172.16.1.106 = ADTRM (L)middle door out VIP portigo view SYB
+172.16.1.107 = ADTRM (L) middle galli down  3rd door
+172.16.1.108 = ADTRM (R) middle Galli dring water
+172.16.1.109 = ADTRM (R)middle door out AB side view 
+172.16.1.110 = ADTRM (L) middle galli down 3rd door
+172.16.1.111 = ADTRM VIP ENTRANCE SOFAS stage beside (L)
+172.16.1.112 = ADTRM Green room
+172.16.1.113 = ADTRM in (L) Audience sofas/electrical cansol view
+172.16.1.114 = ADTRM in(L) middle piller stage view
+172.16.1.115 = ADTRM (L) on door under balcony audince view
+172.16.1.116 = ADTRM in(R) Audience sofas/sound cansol view
+172.16.1.117 = ADTRM in(R) middle piller stage view
+172.16.1.118 = ADTRM (R) on door under balcony audince view
+172.16.1.119 = ADTRM PTZ  stage view
+172.16.1.120 = ADTRM  (L)1st flr on lift
+172.16.1.121 = ADTRM  (R)1st flr on lift
+172.16.1.122 = ADTRM 2nd flr (L) Steps/Lift view
+172.16.1.123 = ADTRM 2nd flr  middle hall view on stage
+172.16.1.124 = ADTRM 2nd flr (R) Steps/Lift view
+172.16.1.125 = ADTRM on Balcony (L) on door  1st flr
+172.16.1.126 = ADTRM on Balcony (R) on door  1st flr
+172.16.1.127 = SYB/Museum raod or SYB park view
+172.16.1.132 = Carpenter total view
+172.16.1.133 = Carpenter Adtrm galli
+172.16.1.134 = ADTRM ab view from adrm side entrance
+172.16.2.1 = Murali hall Stage (Hall-2)
+172.16.2.2 = Murali hall Audience
+172.16.2.3 = Out of Murali Hall view of Waranda
+172.16.2.4 = Hall No-6 Stage
+172.16.2.5 = Hall No-6 Audience
+172.16.2.6 = Gyb front Electrical pole (connection from exchange)
+172.16.2.7 = GYB BABA room front 
+172.16.2.8 = GYB BABA room in
+172.16.2.9 = History hall 
+172.16.2.10 = Hall no-3
+172.16.2.51 = Tel-ex N/W room
+172.16.2.52 = Tel-ex Recption 
+172.16.2.53 = PB Front GYB view
+172.16.2.54 = PB front AB side view
+172.16.2.55 = Tel-ex Beside serivicing room
+172.16.2.56 = PB Ground flr lift/ tel front
+172.16.2.57 = PB  1st flr lift /sisters room front
+172.16.2.58 = PB 2nd flr lift /sisters room front
+172.16.2.101 = AB (Entrance out) portigo
+172.16.2.102 = AB Sofa @Entrance
+172.16.2.103 = AB Reciption
+172.16.2.104 = IT Office
+172.16.2.105 = AB stores grd floor
+172.16.2.106 = AB Didi Office
+172.16.2.107 = Dadiji K&D
+172.16.2.108 = AB baba room /1st floor strps
+172.16.2.109 = AB 1st flr lift side view
+172.16.2.110 = AB 1 st flr ADTRM SIDE VIEW 
+172.16.2.111 = AB1 st flr  galli L shape
+172.16.2.112 = AB  2nd flr steps
+172.16.2.113 = AB 2nd flr Lift side view
+172.16.2.114 = AB 2nd flr Adtrm SIDE
+172.16.2.115 = AB 2nd flr  galli L shape
+172.16.2.116 = AB 3rd flr Lift side
+172.16.2.117 = AB 3rd flr middle up steps
+172.16.2.118 = AB 3rd flr Adtrm side
+172.16.2.119 = AB 3rd Galli L shape
+172.16.2.120 = AB 4th flr Terras 
+172.16.2.151 = JSB Portigo view carpenter side pole
+172.16.2.152 = JSB sapota trees ISBroad view
+172.16.2.153 = Turing wall syab road view
+172.16.2.154 = JSB cc at AB wall Mango view
+172.16.2.155 = jsb parking steps
+172.16.2.156 = JSB  Parking entrance
+172.16.2.157 = JSB  Ground flr on net working box
+172.16.2.158 = JSB 1 st flr steps/lift galli
+172.16.2.159 = JSB 1st flr last window side
+172.16.2.160 = JSB front steps AB road view
+172.16.2.161 = JSB 2nd flr steps / Lift galli
+172.16.2.162 = JSB  2nd flr Passage
+172.16.2.163 = JSB 3rd flr steps /lift galli view
+172.16.2.164 = JSB 3rd flr passage
+172.16.2.165 = JSB 4th flr steps / Lift galli
+172.16.2.166 = JSB  4th flr Passage
+172.16.2.167 = JSB  5th flr steps /lift galli view
+172.16.2.168 = JSB 5th flr passage
+172.16.2.169 = JSB 6tg flr steps /lift
+172.16.2.170 = JSB 6tg flr Garden
+172.16.2.171 = JSB (isp road) for Mangos purpose .. pswd:123456
+172.16.3.1 = Isp Right View (Gopichand beside)
+172.16.3.2 = ISP Back Side tank side View
+172.16.3.3 = ISP Left View Garden Side 
+172.16.3.4 = ISP Main Security in Side gate
+172.16.3.5 = ISP Tank view &  tank entrance view
+172.16.3.6 = ISP Left Road (Infosys Wall)
+172.16.3.7 = ISP AV Room Stage 
+172.16.3.8 = ISP AV Room audience
+172.16.3.9 = ISP Front of Course Room
+172.16.3.10= ISP Inner Reception 
+172.16.3.11= ISP Server Room
+172.16.3.12= ISP Baba Room Beside 
+172.16.3.13= ISP Front Entrance Recptn ( M.Door side)
+172.16.3.14= ISP front Entrance Receptn (Baba r. Side)
+172.16.3.15= ISP Spark Room Opposite
+172.16.3.16= ISP Front View @ Big Flag
+172.16.3.17= ISP Main Gate Out View 
+172.16.3.18= ISP Turning Parking near Infosys gate
+172.16.3.19= ISP Road to AB back Rd cc kept at beside W.tank rd
+172.16.3.20= ISP W.tank Road  to Grean House Rd
+172.16.3.51	Peace cottage  Reception
+172.16.3.52	PC Ground FLr Lift/sitting Area
+172.16.3.53	PC  !st flr Lobby
+172.16.3.54	PC  !st flr Lift
+172.16.3.55	PC 2nd flr lobby
+172.16.3.56	PC 2nd flr Lift
+172.16.3.57	PC 3rd flr lobby
+172.16.3.58	PC 3rd flr lift
+172.16.3.59	PC 4th flr Lobby
+172.16.3.60	PC 4th flr  Lift
+172.16.3.61	PC Anubhutidam Baba room In
+172.16.3.62	PC AD Baba room  Entr Door 
+172.16.3.63	PC AD Baba room  BackSide
+172.16.3.64	PC  Entrance under ( r.side)portigo
+172.16.3.65	PC Back Side
+172.16.3.66	PC Control Rooms View
+172.16.3.67	PC Entrance In Electrical Pole 
+172.16.3.68	PC gate pole to X road
+172.16.3.69	Pc X Rd to JIO tower Rd
+172.16.3.70	Pc X Rd to Grean House Rd
+172.16.4.1 = Main Entrance out Right (Cow Dept side)
+172.16.4.2 = Main Entrance out left (Cow Dept side)
+172.16.4.3 = Turning -1 out of Cow/ Golf  (Right)
+172.16.4.4 = Turning-1out of Cow/ Golf  (Left)
+172.16.4.5 = Front of Constr off pole . water pond road
+172.16.4.6 = Front of Constr off pole . Parking
+172.16.4.7 = Turning-2  out of  Golf/keti  (Right)
+172.16.4.8 = Turning -2 out of  Golf/keti  (Left)
+172.16.4.9 = Turning -3 out of  keti/workers hots  (left)
+172.16.4.10 = Turning-3 out of  keti/stores  (right)
+172.16.4.11 = Turning -4 out at Lift stores side
+172.16.4.12 = Turning -4 out at lift Generator view
+172.16.4.13 = Lift 2 front out side( front Road view)
+172.16.4.14 = Main Entrance IN Brahmastan view of door
+172.16.4.15 = Main Entrance IN opp: Baba room out
+172.16.4.16 = Reception IN
+172.16.4.17 = Baba Room IN
+172.16.4.18 = Brahmastan Right view
+172.16.4.19 = Brahmastan Left view
+172.16.4.20 = Opp : networking rooom-lift
+
+
+
+
+
+
+
+
+
