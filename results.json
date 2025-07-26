@@ -1,5 +1,5 @@
 {
-  "last_refreshed": "2025-07-21 21:48:52 IST",
+  "last_refreshed": "2025-07-26 10:13:56 IST",
   "data": [
     {
       "ip": "172.16.1.1",
@@ -52,13 +52,858 @@
       "status": "Down (Timeout)"
     },
     {
-      "ip": "172.16.2.3",
-      "description": "AB Bhawan",
+      "ip": "172.16.1.11",
+      "description": "Brundvn Gardn Entrance View cc@ADTRM front",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.12",
+      "description": "ADITORIUM front view connctn from security(syb rd)",
       "status": "Up"
     },
     {
-      "ip": "172.16.6.5",
-      "description": "ISP",
+      "ip": "172.16.1.13",
+      "description": "ADITORIUM front view connctn from security(ab rd)",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.14",
+      "description": "Childrens park to JIO tower Road",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.15",
+      "description": "security R.side room out K&D road view smr side",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.51",
+      "description": "K & D Main entrance portigo",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.52",
+      "description": "K & D Main entrance inside LAAN",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.53",
+      "description": "K & D SMR side parking",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.54",
+      "description": "K & D vegiatable side",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.55",
+      "description": "K & D Main kitchen middle",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.56",
+      "description": "K & D Back side keti",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.57",
+      "description": "K & D Roti",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.80",
+      "description": "2ND Gate at K&D/Well",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.81",
+      "description": "K&D Road Ragi Tree",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.82",
+      "description": "sump",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.83",
+      "description": "Jopidi out{ Joola]",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.84",
+      "description": "Jopidi inside",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.85",
+      "description": "Padhad BabaRoom outside",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.86",
+      "description": "Padhad BabaRoom inside",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.87",
+      "description": "K&D Talab turning to Bore well of church road",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.88",
+      "description": "K&D Talab turning to Vishram bwn Road",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.89",
+      "description": "K&D Jopidi Turning on road view to golf side",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.1.101",
+      "description": "ADTRM MAIN front middle entrance",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.102",
+      "description": "ADTRM Front (R)\u00c2\u00ae passage view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.103",
+      "description": "ADTRM (R)\u00c2\u00ae sofas view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.104",
+      "description": "ADTRM (L) sofa Museum steps",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.105",
+      "description": "ADTRM (L) middle Galli dring water",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.106",
+      "description": "ADTRM (L)middle door out VIP portigo view SYB",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.107",
+      "description": "ADTRM (L) middle galli down  3rd door",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.108",
+      "description": "ADTRM (R) middle Galli dring water",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.109",
+      "description": "ADTRM (R)middle door out AB side view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.110",
+      "description": "ADTRM (L) middle galli down 3rd door",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.111",
+      "description": "ADTRM VIP ENTRANCE SOFAS stage beside (L)",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.112",
+      "description": "ADTRM Green room",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.113",
+      "description": "ADTRM in (L) Audience sofas/electrical cansol view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.114",
+      "description": "ADTRM in(L) middle piller stage view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.115",
+      "description": "ADTRM (L) on door under balcony audince view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.116",
+      "description": "ADTRM in(R) Audience sofas/sound cansol view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.117",
+      "description": "ADTRM in(R) middle piller stage view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.118",
+      "description": "ADTRM (R) on door under balcony audince view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.119",
+      "description": "ADTRM PTZ  stage view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.120",
+      "description": "ADTRM  (L)1st flr on lift",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.121",
+      "description": "ADTRM  (R)1st flr on lift",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.122",
+      "description": "ADTRM 2nd flr (L) Steps/Lift view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.123",
+      "description": "ADTRM 2nd flr  middle hall view on stage",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.124",
+      "description": "ADTRM 2nd flr (R) Steps/Lift view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.125",
+      "description": "ADTRM on Balcony (L) on door  1st flr",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.126",
+      "description": "ADTRM on Balcony (R) on door  1st flr",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.127",
+      "description": "SYB/Museum raod or SYB park view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.132",
+      "description": "Carpenter total view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.133",
+      "description": "Carpenter Adtrm galli",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.1.134",
+      "description": "ADTRM ab view from adrm side entrance",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.2.1",
+      "description": "Murali hall Stage (Hall-2)",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.2",
+      "description": "Murali hall Audience",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.3",
+      "description": "Out of Murali Hall view of Waranda",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.4",
+      "description": "Hall No-6 Stage",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.5",
+      "description": "Hall No-6 Audience",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.6",
+      "description": "Gyb front Electrical pole (connection from exchange)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.2.7",
+      "description": "GYB BABA room front",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.8",
+      "description": "GYB BABA room in",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.9",
+      "description": "History hall",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.10",
+      "description": "Hall no-3",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.51",
+      "description": "Tel-ex N/W room",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.52",
+      "description": "Tel-ex Recption",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.53",
+      "description": "PB Front GYB view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.54",
+      "description": "PB front AB side view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.55",
+      "description": "Tel-ex Beside serivicing room",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.56",
+      "description": "PB Ground flr lift/ tel front",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.57",
+      "description": "PB  1st flr lift /sisters room front",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.58",
+      "description": "PB 2nd flr lift /sisters room front",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.101",
+      "description": "AB (Entrance out) portigo",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.102",
+      "description": "AB Sofa @Entrance",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.103",
+      "description": "AB Reciption",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.104",
+      "description": "IT Office",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.105",
+      "description": "AB stores grd floor",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.106",
+      "description": "AB Didi Office",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.107",
+      "description": "Dadiji K&D",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.108",
+      "description": "AB baba room /1st floor strps",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.109",
+      "description": "AB 1st flr lift side view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.110",
+      "description": "AB 1 st flr ADTRM SIDE VIEW",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.111",
+      "description": "AB1 st flr  galli L shape",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.112",
+      "description": "AB  2nd flr steps",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.113",
+      "description": "AB 2nd flr Lift side view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.114",
+      "description": "AB 2nd flr Adtrm SIDE",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.115",
+      "description": "AB 2nd flr  galli L shape",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.116",
+      "description": "AB 3rd flr Lift side",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.117",
+      "description": "AB 3rd flr middle up steps",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.118",
+      "description": "AB 3rd flr Adtrm side",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.119",
+      "description": "AB 3rd Galli L shape",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.120",
+      "description": "AB 4th flr Terras",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.151",
+      "description": "JSB Portigo view carpenter side pole",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.152",
+      "description": "JSB sapota trees ISBroad view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.153",
+      "description": "Turing wall syab road view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.154",
+      "description": "JSB cc at AB wall Mango view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.155",
+      "description": "jsb parking steps",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.156",
+      "description": "JSB  Parking entrance",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.157",
+      "description": "JSB  Ground flr on net working box",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.158",
+      "description": "JSB 1 st flr steps/lift galli",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.159",
+      "description": "JSB 1st flr last window side",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.160",
+      "description": "JSB front steps AB road view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.161",
+      "description": "JSB 2nd flr steps / Lift galli",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.162",
+      "description": "JSB  2nd flr Passage",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.163",
+      "description": "JSB 3rd flr steps /lift galli view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.164",
+      "description": "JSB 3rd flr passage",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.165",
+      "description": "JSB 4th flr steps / Lift galli",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.166",
+      "description": "JSB  4th flr Passage",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.167",
+      "description": "JSB  5th flr steps /lift galli view",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.168",
+      "description": "JSB 5th flr passage",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.169",
+      "description": "JSB 6tg flr steps /lift",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.170",
+      "description": "JSB 6tg flr Garden",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.2.171",
+      "description": "JSB (isp road) for Mangos purpose . pswd:123456",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.1",
+      "description": "Isp Right View (Gopichand beside)",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.2",
+      "description": "ISP Back Side tank side View",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.3",
+      "description": "ISP Left View Garden Side",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.3.4",
+      "description": "ISP Main Security in Side gate",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.3.5",
+      "description": "ISP Tank view &  tank entrance view",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.3.6",
+      "description": "ISP Left Road (Infosys Wall)",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.7",
+      "description": "ISP AV Room Stage",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.3.8",
+      "description": "ISP AV Room audience",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.9",
+      "description": "ISP Front of Course Room",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.10",
+      "description": "ISP Inner Reception",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.11",
+      "description": "ISP Server Room",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.12",
+      "description": "ISP Baba Room Beside",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.13",
+      "description": "ISP Front Entrance Recptn ( M.Door side)",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.14",
+      "description": "ISP front Entrance Receptn (Baba r. Side)",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.15",
+      "description": "ISP Spark Room Opposite",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.3.16",
+      "description": "ISP Front View @ Big Flag",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.17",
+      "description": "ISP Main Gate Out View",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.18",
+      "description": "ISP Turning Parking near Infosys gate",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.19",
+      "description": "ISP Road to AB back Rd cc kept at beside W.tank rd",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.20",
+      "description": "ISP W.tank Road  to Grean House Rd",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.51",
+      "description": "Peace cottage  Reception",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.52",
+      "description": "PC Ground FLr Lift/sitting Area",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.53",
+      "description": "PC  !st flr Lobby",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.54",
+      "description": "PC  !st flr Lift",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.55",
+      "description": "PC 2nd flr lobby",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.56",
+      "description": "PC 2nd flr Lift",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.57",
+      "description": "PC 3rd flr lobby",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.58",
+      "description": "PC 3rd flr lift",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.59",
+      "description": "PC 4th flr Lobby",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.60",
+      "description": "PC 4th flr  Lift",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.61",
+      "description": "PC Anubhutidam Baba room In",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.62",
+      "description": "PC AD Baba room  Entr Door",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.63",
+      "description": "PC AD Baba room  BackSide",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.64",
+      "description": "PC  Entrance under ( r.side)portigo",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.65",
+      "description": "PC Back Side",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.66",
+      "description": "PC Control Rooms View",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.67",
+      "description": "PC Entrance In Electrical Pole",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.68",
+      "description": "PC gate pole to X road",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.69",
+      "description": "Pc X Rd to JIO tower Rd",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.3.70",
+      "description": "Pc X Rd to Grean House Rd",
+      "status": "Up"
+    },
+    {
+      "ip": "172.16.4.1",
+      "description": "Main Entrance out Right (Cow Dept side)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.2",
+      "description": "Main Entrance out left (Cow Dept side)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.3",
+      "description": "Turning -1 out of Cow/ Golf  (Right)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.4",
+      "description": "Turning-1out of Cow/ Golf  (Left)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.5",
+      "description": "Front of Constr off pole . water pond road",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.6",
+      "description": "Front of Constr off pole . Parking",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.7",
+      "description": "Turning-2  out of  Golf/keti  (Right)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.8",
+      "description": "Turning -2 out of  Golf/keti  (Left)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.9",
+      "description": "Turning -3 out of  keti/workers hots  (left)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.10",
+      "description": "Turning-3 out of  keti/stores  (right)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.11",
+      "description": "Turning -4 out at Lift stores side",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.12",
+      "description": "Turning -4 out at lift Generator view",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.13",
+      "description": "Lift 2 front out side( front Road view)",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.14",
+      "description": "Main Entrance IN Brahmastan view of door",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.15",
+      "description": "Main Entrance IN opp: Baba room out",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.16",
+      "description": "Reception IN",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.17",
+      "description": "Baba Room IN",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.18",
+      "description": "Brahmastan Right view",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.19",
+      "description": "Brahmastan Left view",
+      "status": "Down (Timeout)"
+    },
+    {
+      "ip": "172.16.4.20",
+      "description": "Opp : networking rooom-lift",
       "status": "Down (Timeout)"
     }
   ]

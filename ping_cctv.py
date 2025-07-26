@@ -17,9 +17,9 @@ def run_ping_with_progress():
     ip_list = []
     with open(IP_LIST_FILE, "r") as f:
         for line in f:
-            parts = line.strip().split(",", 1)
+            parts = line.strip().split("=", 1)
             if len(parts) == 2:
-                ip_list.append((parts[0], parts[1]))
+                ip_list.append((parts[0].strip(), parts[1].strip()))
 
     os.makedirs(REPORT_DIR, exist_ok=True)
     results = []

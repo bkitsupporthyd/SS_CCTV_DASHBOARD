@@ -40,24 +40,41 @@ def login_required(f):
 @app.route("/")
 @login_required
 def index():
-    run_ping_and_save_results()
+    # Do NOT auto-refresh on page load
+    results = {"last_refreshed": "N/A", "data": []}
     if os.path.exists("results.json"):
-        with open("results.json", encoding="utf-8") as f:
-            results = json.load(f)
-    else:
-        results = {"last_refreshed": "N/A", "data": []}
+        try:
+            with open("results.json", encoding="utf-8") as f:
+                file_content = f.read().strip()
+                if file_content:
+                    results = json.loads(file_content)
+        except Exception as e:
+            print(f"Error reading results.json: {e}")
     return render_template("dashboard.html", results=results)
 
 @app.route("/api/results")
 @login_required
 def api_results():
     run_ping_and_save_results()
+    results = {"last_refreshed": "N/A", "data": []}
     if os.path.exists("results.json"):
-        with open("results.json", encoding="utf-8") as f:
-            results = json.load(f)
-    else:
-        results = {"last_refreshed": "N/A", "data": []}
+        try:
+            with open("results.json", encoding="utf-8") as f:
+                file_content = f.read().strip()
+                if file_content:
+                    results = json.loads(file_content)
+        except Exception as e:
+            print(f"Error reading results.json: {e}")
     return jsonify(results)
+
+@app.route("/refresh", methods=["POST"])
+@login_required
+def refresh():
+    from ping_cctv import run_ping_with_progress
+    last_output = None
+    for _idx, _total, output in run_ping_with_progress():
+        last_output = output
+    return jsonify(last_output)
 
 @app.route("/admin", methods=["GET", "POST"])
 @login_required
