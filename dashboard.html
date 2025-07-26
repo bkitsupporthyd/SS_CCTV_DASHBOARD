@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f5f9;
+            background: linear-gradient(135deg, #1a0536 0%, #2d0b4e 100%);
             padding: 20px;
             margin: 0;
         }
         h1 {
             text-align: center;
-            color: #222;
+            color: #fff;
         }
 
         .status-summary {
@@ -51,24 +51,26 @@
         table {
             border-collapse: collapse;
             width: 100%;
-            background-color: white;
+            background-color: #231942;
             margin-top: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid #3c2a5d;
         }
 
         th, td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid #3c2a5d;
+            color: #e0e0e0;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #372772;
             font-weight: bold;
+            color: #fff;
         }
 
         tr:hover {
-            background-color: #f9f9f9;
+            background-color: #2d1b4e;
         }
 
         .status-up {
@@ -145,6 +147,8 @@
     </div>
 
     <button class="export-btn" onclick="downloadCSV()">⬇️ Export CSV</button>
+    <button class="export-btn" id="refreshBtn" style="background-color:#43a047; margin-left:10px;">🔄 Refresh</button>
+    <span id="progressCount" style="display:inline-block; margin-left:16px; color:#fff; font-weight:bold;"></span>
 
     <div class="table-wrapper">
         <table id="ipTable">
@@ -172,7 +176,6 @@
         </table>
     </div>
 
-    <!-- Remove the full-page loader -->
     <div id="updateMsg" style="display:none; text-align:center; color:green; font-weight:bold; margin-top:10px; margin-bottom:10px;">Data updated!</div>
 
     <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
@@ -220,6 +223,7 @@
             msg.style.display = 'block';
             setTimeout(() => { msg.style.display = 'none'; }, 1500);
         }
+        
         function updateTable(data) {
             // Update summary
             document.querySelector('.status-box.total').innerText = 'Total: ' + data.data.length;
@@ -235,28 +239,38 @@
                 tbody.appendChild(tr);
             });
         }
+        
         function hideAllRowSpinners() {
             document.querySelectorAll('.ip-spinner').forEach(s => s.style.display = 'none');
         }
+        
         function showRowSpinner(idx) {
             hideAllRowSpinners();
             const row = document.querySelector(`#ipTable tbody tr:nth-child(${idx+1}) .ip-spinner`);
             if (row) row.style.display = 'inline-block';
         }
-        // WebSocket logic
+        
+        // Manual refresh with progress count - NO AUTO REFRESH
         let socket;
-        window.addEventListener('DOMContentLoaded', function() {
-            // No full-page loader
+        document.getElementById('refreshBtn').addEventListener('click', function() {
+            const btn = this;
+            btn.disabled = true;
+            btn.innerText = 'Refreshing...';
+            document.getElementById('progressCount').innerText = '';
             socket = io();
-            // Initial table already rendered with old data
             socket.emit('start_ping');
             socket.on('progress', function(data) {
+                document.getElementById('progressCount').innerText = `Completed: ${data.current + 1} out of ${data.total}`;
                 showRowSpinner(data.current);
             });
             socket.on('ping_results', function(data) {
                 updateTable(data);
                 hideAllRowSpinners();
                 showUpdateMsg();
+                btn.disabled = false;
+                btn.innerText = '🔄 Refresh';
+                document.getElementById('progressCount').innerText = '';
+                socket.disconnect();
             });
         });
     </script>
